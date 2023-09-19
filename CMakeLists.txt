@@ -7,3 +7,4 @@ add_executable(MoveAllNegativeToLeft Supreme_One/Arrays/Assignment/MoveAllNegati
 add_executable(main (1) "Supreme_One/Searching/Binary Search 1/main (1).cpp")
 add_executable(main (1) "Supreme_One/Searching/Binary Search 1/main (1).cpp")
 add_executable(FindPivotIndex "Supreme_Two/Week 3 Assignment/FindPivotIndex.cpp")
+add_executable(VariableSizeArray VariableSizeArray.cpp)
