@@ -10,3 +10,4 @@ add_executable(FindPivotIndex "Supreme_Two/Week 3 Assignment/FindPivotIndex.cpp"
 add_executable(VariableSizeArray VariableSizeArray.cpp)
 add_executable(HackerRankTest Questions/HackerRankTest.cpp)
 add_executable(HackerRank2 Questions/HackerRank2.cpp)
+add_executable(SegmentedSieve "Supreme_Two/Basics of Maths and Pointer/SegmentedSieve.cpp")
