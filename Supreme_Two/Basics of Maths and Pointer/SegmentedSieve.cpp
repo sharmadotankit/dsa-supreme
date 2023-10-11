@@ -26,6 +26,8 @@ vector<bool> Sieve(int n){
 
 vector<bool> segSieve(int L,int R){
     //    get me prime array, i will use it to mark seg sieve
+
+
     vector<bool> sieve = Sieve(sqrt(R));
     vector<int> basePrimes;
     for(int i=0;i<sieve.size();i++){
@@ -34,14 +36,20 @@ vector<bool> segSieve(int L,int R){
         }
     }
 
-    for(auto val : basePrimes){
-        cout<<val<<" ";
-    }
-    cout<<endl;
 
     vector<bool> segSieve(R-L+1,true);
     if(L==1 || L==0){
         segSieve[L] = false;
+    }
+
+    for(int i=0;i< segSieve.size();i++){
+        cout<<"Val at "<<i<< " : " <<segSieve[i]<<endl;
+    }
+
+
+    cout<<"BAed prime"<<endl;
+    for(int i=0;i< basePrimes.size();i++){
+        cout<<"Val at "<<i<< " : " <<basePrimes[i]<<endl;
     }
 
     for(auto prime:basePrimes){
@@ -62,14 +70,14 @@ vector<bool> segSieve(int L,int R){
 
 int main(){
 
-    int L = 110;
-    int R = 130;
+    int L = 1;
+    int R = 10;
 
     vector<bool> ss = segSieve(L,R);
 
     for(int i=0;i<ss.size();i++){
         if(ss[i]){
-            cout<<i+L<<" ";
+            cout<<i+L<<"  ";
         }
     }
 
